@@ -28,11 +28,10 @@ createCanvas(1200,800)
 
 engine = Engine.create()
 world = engine.world
-
-
-
-
-polygon =new Polygon(200,200,60,60)
+  
+polygon = Bodies.cirle(50,200,50)  
+World.add(world,polygon)
+//polygon =new Polygon(200,200,60,60)
 
 chain = new Chain(polygon.body,{x:150,y:450} )
 
@@ -95,7 +94,7 @@ function draw(){
 
 
 function mouseDragged(){
-    Matter.Body.setPosition(this.polygon,{x:mouseX, y:mouseY})
+    Matter.Body.setPosition(polygon.body,{x:mouseX, y:mouseY})
         
 }
 
