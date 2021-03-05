@@ -29,7 +29,7 @@ createCanvas(1200,800)
 engine = Engine.create()
 world = engine.world
   
-polygon = Bodies.cirle(50,200,50)  
+polygon = Bodies.circle(50,200,50)  
 World.add(world,polygon)
 //polygon =new Polygon(200,200,60,60)
 
